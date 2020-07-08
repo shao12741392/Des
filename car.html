@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	
+	</head>
+	<body onload="ad()">
+		<header>
+			<ul>
+				<li>
+					<img src="img/ceiling-logo2.png" alt="">
+				</li>
+				<li>
+					<a href="">
+						<input type="text">
+						<span>搜索</span>
+					</a>
+				</li>
+			</ul>
+		</header>
+		<form action="index.html" method="post">
+			<h3 onclick="showCar()">我的购物车(<span id="count">0</span>)</h3>
+		</form>
+		<article id="article">
+			<table id="tab">
+				<tr>
+					<th>
+						全选
+						<input type="checkbox" onclick="checkAll(this)" id="a">
+					</th>
+					<th>菜品</th>
+					<th>价格</th>
+					<th>数量</th>
+					<th>操作</th>
+				</tr>
+			</table>
+			<div class="btn">
+				<div>
+					<input type="button" value="删除选中项" onclick="deleteChecked()">
+					<span onclick="showShop()">继续点餐</span>
+				</div>
+				<div>
+					合计
+					<span id="m"></span> 元
+					<input type="button" value="结算" onclick="settement()">
+				</div>
+			</div>
+		</article>
+	</body>
+	<script type="text/javascript" src="./dist/car.js">
+	</script>
+</html>

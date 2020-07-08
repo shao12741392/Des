@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meituan</title>
+   
+</head>
+
+<body onload="newBuy()">
+    <header >
+        <ul>
+            <li>
+                <img src="img/ceiling-logo2.png" alt="">
+            </li>
+            <li>
+                <a href="">
+                    <input type="text">
+                    <span>搜索</span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <form action="car.html" method="post">
+    	<h3 onclick="showCar()">我的购物车(<span id="count">0</span>)</h3>
+    	
+    	
+    </form>
+    <section id="section">
+        <ul>
+            <li>
+                <img src="img/1cde.jpg" alt="">
+                <dt>
+                    <span>A米汉堡包</span>
+                    <span>16每份</span>
+                </dt>
+                <dt>
+                    月销量20份
+                </dt>
+                <dt>
+                    <span>起送￥10</span>
+                    <span>免配送费</span>
+                    <span>45分钟</span>
+                </dt>
+                <dt>
+                    <input type="button" value="加入购物车" onclick="addFoodCar('A米汉堡包',16)">
+                </dt>
+            </li>
+            <li>
+                <img src="img/3a31d.jpg" alt="">
+                <dt>
+                    <span>杨记小厨</span>
+                    <span>36每份</span>
+                </dt>
+                <dt>
+					月销量200份
+                </dt>
+                <dt>
+                    <span>起送￥10</span>
+                    <span>免配送费</span>
+                    <span>45分钟</span>
+                </dt>
+                <dt>
+                    <input type="button" value="加入购物车" onclick="addFoodCar('杨记小厨',36)">
+                </dt>
+            </li>
+            <li>
+                <img src="img/9ecd.jpg" alt="">
+                <dt>
+                    <span>杨玉明烤番薯</span>
+                    <span>32每份</span>
+                </dt>
+                <dt>
+					月销量200份
+                </dt>
+                <dt>
+                    <span>起送￥10</span>
+                    <span>免配送费</span>
+                    <span>45分钟</span>
+                </dt>
+                <dt>
+                    <input type="button" value="加入购物车" onclick="addFoodCar('杨玉明烤番薯',32)">
+                </dt>
+            </li>
+            <li>
+                <img src="img/b53a0f.jpg" alt="">
+                <dt>
+                    <span>黄焖鸡米饭</span>
+                    <span>32每份</span>
+                </dt>
+                <dt>
+					月销量200份
+                </dt>
+                <dt>
+                    <span>起送￥10</span>
+                    <span>免配送费</span>
+                    <span>45分钟</span>
+                </dt>
+                <dt>
+                    <input type="button" value="加入购物车" onclick="addFoodCar('黄焖鸡米饭',32)">
+                </dt>
+            </li>
+        </ul>
+    </section>
+    <script src="./dist/index.js"></script>
+</body>
+
+</html>
